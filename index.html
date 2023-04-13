@@ -1,0 +1,222 @@
+---
+title: home
+type: index
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <!-- General header -->
+  {% include header.html %}
+  <!-- Page specific header -->
+  <head>
+    <title>Boning's Page</title>
+  </head>
+
+  <body>
+    <!-- Navigation Bar Section -->
+    {% include navbar.html demolink="#demo" %}
+
+    <!-- Page Banner Section -->
+    <!-- Load the background image -->
+    {% assign background_image_url = site.baseurl | append:
+    '/assets/img/Banner.png' %}
+    <section
+      id="banner"
+      class="banner"
+      style="background-image: url({{background_image_url}})"
+      ;
+    >
+      <div class="title-section">
+        {%- comment -%}
+        <div style="top: 40%; position: absolute">
+          <h1 class="title mb-4">Boning Dong</h1>
+          <p class="subtitle my-1">
+            Computer Engineering | Art & Technology Student
+          </p>
+          <p class="subtitle">University of California, Santa Barbara</p>
+        </div>
+        {%- endcomment -%}
+      </div>
+    </section>
+
+    <!-- Section 1 -->
+    <section id="about-content">
+      <div class="about-section" style="text-align: center">
+        <div class="container">
+          <div class="row justify-content-end">
+            <div
+              class="col-md-4 d-flex align-items-center justify-content-center"
+              style="background-color: transparent"
+            >
+              <img
+                class="portrait my-auto"
+                src="{{ site.baseurl }}/assets/img/main/Content.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="col-md-8 py-md-5 pt-4 p-md-5">
+              <h2 class="section-title">Create Stunning Content</h2>
+              <p>
+                With our generative AI technologies, you can create stunning
+                content in various formats with ease. Whether you want to
+                generate text, images, videos, or 3D models, simply tell us in
+                natural language, and let our platform do the rest. Unleash your
+                creativity and create high-quality content that resonates with
+                your audience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="about-connect" style="background-color: #f6f7f8">
+      <div class="about-section" style="text-align: center">
+        <div class="container">
+          <div class="row justify-content-end">
+            <div class="col-md-8 py-md-5 pt-4 p-md-5">
+              <h2 class="section-title">Connect the Like-Minded</h2>
+              <p>
+                Our metaverse is a social platform that helps you to establish
+                meaningful friendships with other users and make friends through
+                your shared love of creation. Build a community around your
+                creations and inspire each other to push the boundaries of
+                what's possible.
+              </p>
+            </div>
+            <div
+              class="col-md-4 d-flex align-items-center justify-content-center"
+              style="background-color: transparent"
+            >
+              <img
+                class="portrait my-auto"
+                src="{{ site.baseurl }}/assets/img/main/Connect.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="about-earn">
+      <div class="about-section" style="text-align: center">
+        <div class="container">
+          <div class="row justify-content-end">
+            <div
+              class="col-md-4 d-flex align-items-center justify-content-center"
+              style="background-color: transparent"
+            >
+              <img
+                class="portrait my-auto"
+                src="{{ site.baseurl }}/assets/img/main/Currency.png"
+                alt=""
+              />
+            </div>
+            <div class="col-md-8 py-md-5 pt-4 p-md-5">
+              <h2 class="section-title">Create to Earn</h2>
+              <p>
+                Our platform allows you to monetize your creations and earn from
+                what you make. Build what you love, you can leverage our
+                platform's features to turn your passion into profit. Grow your
+                audience, build your brand, and earn money from your creativity.
+                Join the revolution and start making your mark today.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="demo" style="background-color: #f6f7f8">
+      <div class="about-section" style="text-align: center">
+        <div class="container">
+          <!-- <div class="row justify-content-end"> -->
+          <div class="d-flex justify-content-center align-items-center">
+            <h1 class="section-title mb-5">Demo Video</h1>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="embed-responsive embed-responsive-16by9">
+              <div class="embed-responsive-item">
+                <video
+                  src="{{ site.baseurl }}/assets/video/demo1.mp4"
+                  controls
+                ></video>
+              </div>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <!-- Footer -->
+    <footer id="footer" class="page-footer">
+      <div class="text-center">
+        <!-- Footer Elements -->
+
+        <div class="footer-wrapper px-4 py-4">
+          <div class="footer-body">
+            <div class="d-block text-center">
+              <h1 class="footer-title">Contact Us!</h1>
+              <p class="footer-subline">
+                <!-- Feel free to connect and talk with me about any interesting
+                ideas about projects, artwork or just life! -->
+              </p>
+            </div>
+
+            <div class="footer-icon-bar">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="my-1 text-center d-inline-flex">
+                      <a href="mailto:boning.contact@gmail.com" class="icon">
+                      </a>
+                      <a href="https://www.facebook.com/boooning" class="icon">
+                      </a>
+                      <a href="https://github.com/boningdong" class="icon"> </a>
+                      <a
+                        href="https://www.instagram.com/dbndbn6279/"
+                        class="icon"
+                      >
+                      </a>
+                      <a
+                        href="https://www.linkedin.com/in/boning-dong/"
+                        class="icon"
+                      >
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center" style="color: #606368">
+          © Designed by: Possible Worlds
+        </div>
+        <!-- Copyright -->
+      </div>
+    </footer>
+    <!-- Footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+  </body>
+</html>
