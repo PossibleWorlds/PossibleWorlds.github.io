@@ -54,3 +54,8 @@ sass:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+redirect_from:
+  - /demo/
+redirect_to: /
+permalink: /#demo
