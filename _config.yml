@@ -31,6 +31,10 @@ url: "https://powd.ai" # the base hostname & protocol for your site, e.g. http:/
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -54,8 +58,3 @@ sass:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-redirect_from:
-  - /demo/
-redirect_to: /
-permalink: /#demo
